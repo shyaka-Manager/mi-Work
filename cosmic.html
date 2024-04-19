@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminara - Weaver of Light</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #luminara {
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="luminara">Luminara, the Weaver of Light</div>
+
+    <script>
+        // Simple JavaScript to interact with the element
+        const luminaraElement = document.getElementById('luminara');
+
+        luminaraElement.addEventListener('click', () => {
+            alert('You've encountered Luminara!');
+        });
+    </script>
+</body>
+</html>
