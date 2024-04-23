@@ -1,0 +1,74 @@
+<html>
+<head>
+  <title>contact us</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #37eb6491;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=send] {
+  background-color: #000000;
+  color: rgba(230, 238, 235, 0.938);
+  padding: 10px 560px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3ad3d8;
+}
+
+.contac{
+  border-radius: 5px;
+  background-color: #17a86cb9;
+  padding: 20px;
+}
+</style>
+</head>
+<body style="background-color: rgba(0, 255, 98, 0.678);">
+<h3>Contact Us</h3>
+
+<div class="contac">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+     <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email adress..">
+    <label for="telnumber">Telephone</label>
+    <input type="text" id="telnumber" name="telnumber" placeholder="Your telephone number..">
+
+
+    <label for="PROVINCE">Province</label>
+    <select id="province" name="province">
+      <option value="KIGALI CITY">KIGALI CITY</option>
+      <option value="">NORTH PROVINCE</option>
+      <option value="usa">SOUTH PROVINCE</option>
+       <option value="usa">EAST PROVINCE</option>
+        <option value="usa">WEST PROVINCE</option>
+
+      
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="message" name="message" placeholder="Message.." style="height:200px"></textarea>
+
+    <input type="send" value="Send">
+  </form>
+</div>
+
+</body>
+</html>
